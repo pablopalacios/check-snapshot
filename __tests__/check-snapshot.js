@@ -1,6 +1,6 @@
-import React from "react";
-import { iWasCalled } from "../snapshot-serializer";
-import checkSnapshot from "../";
+const React = require("react");
+const iWasCalled = require("../snapshot-serializer").iWasCalled;
+const checkSnapshot = require("../");
 
 const FixtureComponent = React.createElement(
   "p",
