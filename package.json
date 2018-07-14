@@ -1,7 +1,8 @@
 {
   "name": "check-snapshot",
   "version": "0.0.2",
-  "description": "Simple wrapper around react-test-renderer and jest expect",
+  "description": "Utility to make react snapshot tests without boilerplates",
+  "keywords": ["react", "jest", "snapshot", "test"],
   "main": "index.js",
   "repository": "git@github.com:pablopalacios/check-snapshot.git",
   "author": "Palácios",
