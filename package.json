@@ -20,5 +20,6 @@
   "dependencies": {
     "expect": "^23.3.0",
     "react-test-renderer": "^16.4.1"
-  }
+  },
+  "files": ["index.js"]
 }
