@@ -1,6 +1,6 @@
 {
   "name": "check-snapshot",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Utility to make react snapshot tests without boilerplates",
   "keywords": ["react", "jest", "snapshot", "test"],
   "main": "index.js",
@@ -14,12 +14,14 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "jest": "^23.3.0",
-    "react": "^16.4.1"
+    "jest": "23.*",
+    "react": "16.*",
+    "expect": "23.*",
+    "react-test-renderer": "16.*"
   },
-  "dependencies": {
-    "expect": "^23.3.0",
-    "react-test-renderer": "^16.4.1"
+  "peerDependencies": {
+    "expect": "23.*",
+    "react-test-renderer": "16.*"
   },
   "files": ["index.js"]
 }
