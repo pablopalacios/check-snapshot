@@ -1,6 +1,6 @@
 {
   "name": "check-snapshot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utility to make react snapshot tests without boilerplates",
   "keywords": ["react", "jest", "snapshot", "test"],
   "main": "index.js",
