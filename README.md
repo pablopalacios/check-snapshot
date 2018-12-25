@@ -12,10 +12,27 @@ yarn add -D check-snapshot
 ## Usage
 
 ```javascript
-import checkSnapshot from 'check-snapshot';
+import snapshot from 'check-snapshot';
 import MyComponent from '../MyComponent';
 
+test('MyComponent', () => snapshot(<MyComponent />));
+```
+
+### Passing options to renderer.create
+
+If you need to mock a ref you can pass an object as second argument to
+snapshot function. This object will be passed to renderer.create when
+serializing your component.
+
+```javascript
+const createNodeMock = () => ({ focus: () => null });
+const options = { createNodeMock }
+
+test('MyComponent', () => snapshot(<MyComponent />, options))
+
+// The same as:
 test('MyComponent', () => {
-    checkSnapshot(<MyComponent />);
+    const tree = renderer.create(<MyComponent />, options).toJSON();
+    expect(tree).toMatchSnapshot();
 });
 ```
