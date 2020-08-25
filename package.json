@@ -20,7 +20,7 @@
     "react-test-renderer": "16.*"
   },
   "peerDependencies": {
-    "jest": "24.*",
+    "jest": "26.*",
     "react-test-renderer": "16.*"
   },
   "files": ["index.js"]
